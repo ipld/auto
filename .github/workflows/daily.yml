@@ -18,3 +18,5 @@ jobs:
       with:
         entrypoint: node
         args: teams.js
+      env:
+        GHTOKEN: ${{ secrets.GHTOKEN }}
