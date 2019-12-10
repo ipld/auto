@@ -9,14 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Build
-      uses: actions/npm@master
-      with:
-        entrypoint: npm
-        args: install
+      run: npm install
     - name: Audit Teams 
-      uses: actions/npm@master
-      with:
-        entrypoint: node
-        args: teams.js
+      run: node teams.js
       env:
         GHTOKEN: ${{ secrets.GHTOKEN }}
