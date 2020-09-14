@@ -20,6 +20,7 @@ const fallbacks = repo => {
 run('ipld', {
   core: repo => {
     if (repo.name === 'specs') return 'push'
+    if (repo.name === 'team-mgmt') return 'push'
     if (repo.name.startsWith('doc')) return 'push'
     return 'pull'
   },
