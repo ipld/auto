@@ -1,3 +1,5 @@
+**This repository is no longer in use, see https://github.com/ipld/github-mgmt for the current org automation.**
+
 # auto
 
 Org level github automation.
